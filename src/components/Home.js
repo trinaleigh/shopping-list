@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import ShoppingList from './ShoppingList';
+import ShoppingList from '../containers/ShoppingList';
 
 export default class Home extends React.Component {
 	
