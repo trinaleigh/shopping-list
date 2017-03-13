@@ -1,6 +1,6 @@
 const showHide = (state = 'ALL', action) => {
 
-	if (action.type=='SET_FILTER') {
+	if (action.type=='APPLY_FILTER') {
 		return action.filter;
 	} else {
 		return state

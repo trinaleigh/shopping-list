@@ -4,14 +4,15 @@ import Item from '../components/Item'
 
 const mapStateToProps = (state) => {
 	return {
-		purchased: state.items.purchased
+		purchased: state.items.purchased,
+		id: state.items.id
 	}
 }
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		onClick: () => {
-			dispatch(toggle())
+		onClick: (id) => {
+			dispatch(toggle(id))
 		}
 	}
 }

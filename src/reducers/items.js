@@ -1,7 +1,10 @@
-const items = (state = { purchased: false }, action) => {
-
+const items = (state = { purchased: false, id: 0 }, action) => {
 	if (action.type == 'TOGGLE') {
-		return { purchased: !state.purchased };
+		if (state.id !== action.id) {
+        	return state
+      	} else {
+			return { purchased: !state.purchased, id: state.id }
+      	}
 	} else {
 		return state
 	}
