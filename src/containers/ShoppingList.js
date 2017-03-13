@@ -4,7 +4,7 @@ import Item from '../components/Item'
 
 const mapStateToProps = (state) => {
 	return {
-		completed: state.completed
+		purchased: state.items.purchased
 	}
 }
 

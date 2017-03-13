@@ -1,18 +1,10 @@
 import { combineReducers } from 'redux'
+import items from './items.js'
+import showHide from './showHide.js'
 
-
-const lister = (state = { completed: false }, action) => {
-
-	if (action.type=='TOGGLE') {
-		return { completed: !state.completed };
-	} else {
-		return state
-	}
-}
-
-// const lister = combineReducers({
-//   items,
-//   showHide
-// })
+const lister = combineReducers({
+  items,
+  showHide
+})
 
 export default lister

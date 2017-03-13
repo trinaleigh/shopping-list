@@ -1,11 +1,11 @@
 import React, { PropTypes } from 'react'
 
-const Item = ({ onClick, completed }) => {
+const Item = ({ onClick, purchased }) => {
 	return (
 	<p
 		onClick={onClick}
 		style={{
-			textDecoration: completed ? 'line-through' : 'none'
+			textDecoration: purchased ? 'line-through' : 'none'
 		}}
 	>
 		something to buy
@@ -15,7 +15,7 @@ const Item = ({ onClick, completed }) => {
 
 Item.propTypes = {
 	onClick: PropTypes.func.isRequired,
-	completed: PropTypes.bool.isRequired
+	purchased: PropTypes.bool.isRequired
 }
 
 export default Item
