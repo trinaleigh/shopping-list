@@ -2,14 +2,14 @@ import React, { PropTypes } from 'react'
 
 const Item = ({ onClick, purchased, text }) => {
 	return (
-	<p
+	<li
 		onClick={onClick}
 		style={{
 			textDecoration: purchased ? 'line-through' : 'none'
 		}}
 	>
 		{text}
-	</p>
+	</li>
 	)
 }
 

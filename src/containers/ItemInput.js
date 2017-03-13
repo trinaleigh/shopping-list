@@ -19,7 +19,7 @@ let ItemInput = ({ dispatch }) => {
           input = node
         }} />
         <button type="submit">
-          Add Item
+          add item
         </button>
       </form>
     </div>

@@ -6,3 +6,44 @@
 	font-family: Helvetica;
 	color: var(--primary);
 }
+
+body {
+	margin: 1em;
+}
+
+h1 {
+	font-size: 6vh;
+}
+
+h2 {
+	font-size: 4vh;
+}
+
+h2, h3, h4 {
+	color: var(--secondary);
+}
+
+input, button {
+	font-size: 2.5vh;
+	background-color: white;
+	border: 0.1em solid;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+
+input:focus, button:focus { 
+    outline: none;
+}
+
+button:active{
+	background-color: var(--primary);
+	color: white;
+	outline: none;
+	box-shadow: none;
+}
+
+li {
+	font-size: 2.5vh;
+	margin: 0em 0em 0.2em 0em;
+}
