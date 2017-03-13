@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import ShoppingList from '../containers/ShoppingList';
+import ItemInput from '../containers/ItemInput';
 
 export default class Home extends React.Component {
 	
@@ -13,7 +14,8 @@ export default class Home extends React.Component {
 	    return (
 	    	<div>
 	    	<h2>list</h2>
-	    	<ShoppingList />
+	    	<ShoppingList/>
+	    	<ItemInput/>
 	    	</div>
 	    );
 	}

@@ -1,14 +1,14 @@
 import React, { PropTypes } from 'react'
 
-const Item = ({ onClick, purchased, id }) => {
+const Item = ({ onClick, purchased, text }) => {
 	return (
 	<p
-		onClick={() => onClick(id)}
+		onClick={onClick}
 		style={{
 			textDecoration: purchased ? 'line-through' : 'none'
 		}}
 	>
-		something to buy
+		{text}
 	</p>
 	)
 }

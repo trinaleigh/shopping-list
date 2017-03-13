@@ -1,17 +1,16 @@
 import { connect } from 'react-redux'
 import { toggle } from '../actions'
-import Item from '../components/Item'
+import ItemList from '../components/ItemList'
 
 const mapStateToProps = (state) => {
 	return {
-		purchased: state.items.purchased,
-		id: state.items.id
+		items: state.items
 	}
 }
 
 const mapDispatchToProps = (dispatch) => {
 	return {
-		onClick: (id) => {
+		checkUncheck: (id) => {
 			dispatch(toggle(id))
 		}
 	}
@@ -20,6 +19,6 @@ const mapDispatchToProps = (dispatch) => {
 const ShoppingList = connect(
 	mapStateToProps,
 	mapDispatchToProps
-)(Item)
+)(ItemList)
 
 export default ShoppingList
