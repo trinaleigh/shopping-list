@@ -19,8 +19,8 @@ h2, h3, h4 {
 	color: var(--secondary);
 }
 
-input, button, a, span {
-	font-size: 3vh;
+input, button, a, span, p {
+	font-size: 2.5vh;
 	background-color: white;
 	border: 0.1em solid;
 	border-radius: 0.5em;
@@ -39,9 +39,9 @@ button:active{
 	box-shadow: none;
 }
 
-li, p {
-	font-size: 3vh;
-	margin: 0em 0em 0.2em 0em;
+li {
+	font-size: 4vh;
+	padding: 0.2em;
 }
 
 a {
@@ -61,4 +61,5 @@ span {
 p {
 	color: var(--secondary);
 	margin: 1em 0em 0em 0em;
+	border: none;
 }
