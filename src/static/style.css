@@ -12,11 +12,7 @@ body {
 }
 
 h1 {
-	font-size: 6vh;
-}
-
-h2 {
-	font-size: 4vh;
+	font-size: 6vmin;
 }
 
 h2, h3, h4 {
@@ -24,7 +20,7 @@ h2, h3, h4 {
 }
 
 input, button, a, span {
-	font-size: 2.5vh;
+	font-size: 3vmin;
 	background-color: white;
 	border: 0.1em solid;
 	border-radius: 0.5em;
@@ -44,7 +40,7 @@ button:active{
 }
 
 li, p {
-	font-size: 2.5vh;
+	font-size: 3vmin;
 	margin: 0em 0em 0.2em 0em;
 }
 
