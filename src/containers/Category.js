@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 	}
 }
 
-const Categories = connect(
+const Category = connect(
   mapStateToProps,
   mapDispatchToProps
 )(Filter)
 
-export default Categories
+export default Category
